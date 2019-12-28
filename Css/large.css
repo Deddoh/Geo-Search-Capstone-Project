@@ -138,11 +138,9 @@ header img #search-icon{
 /* section */
 
  #image-map{
-<<<<<<< HEAD
-	background:url("../img/openland.png") no-repeat  ;
-=======
+
 	background:url("../img/openland.png") no-repeat;
->>>>>>> 2ccfb4bdaabe10ca19e5150931e4d56fd251c523
+
 	background-position: center;
 	background-size: cover;
 	min-height: 500px;
