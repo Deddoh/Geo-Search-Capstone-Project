@@ -71,10 +71,10 @@ margin-top: 10px;
 }
 
 header nav a:hover{
-text-decoration: underline;
 color: red;
 text-shadow: #000;
 border: ridge;
+border-color:white;
 }
 header h1 a:hover{
 	color: red;
@@ -84,7 +84,6 @@ header h1 a:hover{
 }
 
 fieldset {
-border: 1px solid white;
 background-color: transparent;
 
 }
@@ -94,6 +93,7 @@ padding: 6px;
 height: 18px;
 width:250px;
 border-style: none;
+border: none;
 }
 fieldset form{
 margin:10px;
@@ -104,11 +104,14 @@ border-radius: 28px;
 }
 
 fieldset input[type="text"]:hover {
-	padding-left: 30px;
-	
+	padding:0 30px;
+
 
 	
 }
+fieldset form:hover{
+	border: 3px solid blue;
+	}
 header img #search-icon{
 	
 }
@@ -122,7 +125,7 @@ header img #search-icon{
 }
 
 .btnSearch{
-	background: url("../img/baseline_search_black.png") no-repeat;
+	background: url("../img/baseline_search_black.png") no-repeat ;
 	height: 28px;
 	width: 40px;
 	background-color: #fff;
@@ -135,17 +138,20 @@ header img #search-icon{
 /* section */
 
  #image-map{
+<<<<<<< HEAD
+	background:url("../img/openland.png") no-repeat  ;
+=======
 	background:url("../img/openland.png") no-repeat;
+>>>>>>> 2ccfb4bdaabe10ca19e5150931e4d56fd251c523
 	background-position: center;
 	background-size: cover;
 	min-height: 500px;
 	border:none;
-	
 	background-color: grey;
 }
 #image-map h1{
 	padding-top: 50px;
-	color: #fff;
+	color: #ffffff;
 	font-size: 55px;
 	text-shadow: #000;
 	text-align: center;
@@ -156,7 +162,7 @@ header img #search-icon{
 
 #image-map p{
 	padding: 10px;
-	color: #fff;
+	color: #ffffff;
 	font-size: 30px;
 	text-align: center;
 	font-weight: 1.5em;
