@@ -1,0 +1,23 @@
+{
+  "name": "geo-search-capstone-project",
+  "version": "1.0.0",
+  "description": "Geo-Search is a tool to enable users search for places of interest, and extract information about those places such as weather conditions, and also view a static image of geographical locations, buildings etc. You can view the documentation at https://drive.google.com/file/d/0B2qzd9cymQ-uNFlYNU5BV2Q5Skg3WWZ2ejNQS2I5YmNTNlFn/view",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^6.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deddoh/Geo-Search-Capstone-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deddoh/Geo-Search-Capstone-Project/issues"
+  },
+  "homepage": "https://github.com/Deddoh/Geo-Search-Capstone-Project#readme"
+}
