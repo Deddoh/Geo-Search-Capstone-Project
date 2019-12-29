@@ -124,7 +124,7 @@ header img #search-icon{
 	border:none;
 }
 
-.btnSearch{
+#btnSearch{
 	background: url("../img/baseline_search_black.png") no-repeat ;
 	height: 28px;
 	width: 40px;
@@ -136,16 +136,26 @@ header img #search-icon{
 }
 
 /* section */
+#btnWeather, #btnTemperature{
+	float: right;
+	padding: 8px 28px;
+	margin: 0;
+}
+
+form #buttons{
+	margin-top: 0;
+	margin-right: 0;
+}
+
 
  #image-map{
-
-	background:url("../img/openland.png") no-repeat  ;
-
+	background:url("../img/openland.png") no-repeat ;
 	background-position: center;
 	background-size: cover;
 	min-height: 500px;
+	height: 100%;
 	border:none;
-	background-color: grey;
+	/*background-color: grey;*/
 }
 #image-map h1{
 	padding-top: 50px;
