@@ -9,10 +9,19 @@
 	<title>Geo-Search</title>
 	<link rel="stylesheet" type="text/css" href="Css/large.css">
 
+	<script type="text/javascript" src="Js/geo.js"></script>
+	<script src="Js/weather.js"></script>
+	 <script src="Js/script.js" type="text/javascript"></script>
+	<script type="text/javascript" src="Js/fetch.js"></script>
+	<script type="text/javascript" src="Js/geo.js"></script>
 	
-	<script src="Js/script.js" type="text/javascript"></script>
+	<script
+  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHbBnuuK5gqsUecQd2vqKnNwFkN2aFxjY&callback=initMap"
+>
+</script>
+
 </head>
-<body>
+<body onload="loadMap()">
 <header>
 	<div id="logo-branding">
 		<h1><a href="index.html"> Geo-Search</a></h1>
@@ -26,7 +35,7 @@
 	</nav>
 <fieldset id="search-box">
 <form >
- <input type="text" name="search" placeholder="Search location"  >
+ <input type="text" name="search" placeholder="Search location" id="address" oninput="initAutocomplete()">
 <select default="Search option">
 	<option value="Weather" class="option"> Weather </option>
 
@@ -34,7 +43,8 @@
 </select>
 
 
-	<button class="btnSearch" type="submit"> </button>
+	<button id="btnSearch" type="submit" onclick="geocodeAddress()"> </button>
+	
 
 </form>	
 </fieldset>
@@ -52,6 +62,12 @@
 
 
 <div id="brief-description">
+	<div>
+		<form id="buttons">
+		<button id="btnWeather" type="submit" value="weather">Weather </button>
+			<button id="btnTemperature" type="submit" value="temperature">Temperature </button>
+		</form>
+	</div>
 	<article>
 		
 		<h1>What is Geo-Search Tool?</h1>
@@ -99,10 +115,36 @@
 </main>
 <footer>
 	<div class="container">
-	<h4>Proudly brought to you by Dedan &nbsp; &nbsp; | &nbsp;&nbsp; Andela Capstone Project &nbsp;&nbsp; | &nbsp;&nbsp;Copyright &copy; 2019</h4>
+	<h4>Proudly brought to you by Dedan &nbsp; &nbsp; | &nbsp;&nbsp; Andela Project &nbsp;&nbsp; | &nbsp;&nbsp;Copyright &copy; 2019</h4>
 	 <a href="mailto: deddoh84@gmail.com">deddoh84@gmail.com</a>
 	</div>
 </footer>
+
+
+<script>
+// 	Promise.all([
+// 		fetch('http://autocomplete.geocoder.ls.hereapi.com/6.2/suggest.json')
+		
+// 	.then( files => {
+// 		files.forEach(file=>{
+// 			process ( file.json());
+// 		})
+// 		})
+// 		.catch(err=>{
+
+		
+	
+// })
+
+// 		let process = (prom) => {
+// 			prom.then(data=>{
+
+// 			})
+// 		}
+
+
+</script>
+
 
 </body>
 </html>
