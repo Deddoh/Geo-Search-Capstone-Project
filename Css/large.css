@@ -149,7 +149,9 @@ form #buttons{
 
 
  #image-map{
-	background:url("../img/openland.png") no-repeat ;
+
+
+	background:url("../img/openland.png") no-repeat;
 	background-position: center;
 	background-size: cover;
 	min-height: 500px;
